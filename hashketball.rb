@@ -182,7 +182,9 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  
+  get_players.each do |stats|
+    stats
+  end
 end
 
 

@@ -174,7 +174,7 @@ def player_numbers(team)
   game_hash.each do |home_away, key|
     get_players.each do |numbers|
     if game_hash[:team_name] = team
-      return jersey_numbers.push(numbers[:number])
+     jersey_numbers.push(numbers[:number])
     end
   end
 end

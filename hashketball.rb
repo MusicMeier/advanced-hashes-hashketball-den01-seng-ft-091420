@@ -177,5 +177,6 @@ def player_numbers(team)
       jersey_numbers.push(key[:number])
     end
   end
+  end
   jersey_numbers
 end

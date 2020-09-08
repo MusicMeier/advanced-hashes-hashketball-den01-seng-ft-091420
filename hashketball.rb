@@ -1,4 +1,6 @@
-# Write your code below game_hash
+require 'pry'
+require './hashketball.rb'
+
 def game_hash
   {
     home: {
@@ -126,4 +128,43 @@ def game_hash
   }
 end
 
-# Write code here
+def get_players
+  players = game_hash.keys.map do |team|
+    game_hash[team][:players]
+  end
+  players.flatten
+end
+
+def num_points_scored(player_name)
+  
+    found_player = get_players.find do |player|
+      player[:player_name] == player_name
+      
+    end
+    found_player[:points]
+end
+
+def shoe_size(player_name)
+  found_player = get_players.find do |player|
+      player[:player_name] == player_name
+      
+    end
+    found_player[:shoe]
+end
+
+def team_colors(team)
+  game_hash.each do |home_away, key|
+    if key[:team_name] == team
+ return key[:colors]
+  end
+  end
+end
+
+def team_names
+  names_of_teams = []
+  game_hash.each do |home_away, key|
+    names_of_teams.push(key[:team_name][0], key[:team_name][1])
+    
+  end
+  names_of_teams
+end

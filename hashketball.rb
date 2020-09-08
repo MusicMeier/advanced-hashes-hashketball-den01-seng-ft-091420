@@ -169,6 +169,9 @@ def team_names
   names_of_teams
 end
 
-def 
+def player_numbers(team)
+  jersey_numbers = []
+  get_player.each do |number|
+    
 
 

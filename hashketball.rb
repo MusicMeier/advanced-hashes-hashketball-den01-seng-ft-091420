@@ -175,4 +175,5 @@ def player_numbers(team)
     if game_hash[:team_name] = team
       jersey_numbers.push(number)
     end
+  end
 end

@@ -182,8 +182,8 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  get_players.each do |stats|
-    stats
+  game_hash.each do |home_away, key|
+    
   end
 end
 

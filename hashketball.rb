@@ -177,5 +177,6 @@ def player_numbers(team)
       return jersey_numbers.push(numbers[:number])
     end
   end
+end
   jersey_numbers
 end

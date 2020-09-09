@@ -183,11 +183,8 @@ end
 
 def player_stats(player_name)
   game_hash.each do |home_away, key|
-    binding.pry
     home_away[:players].each do |players|
-      binding.pry
       if players[:player_name] = player_name
-        binding.pry
       each_player = players.each do |stats|
       end
     end

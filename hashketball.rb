@@ -185,11 +185,11 @@ def player_stats(player_name)
   game_hash.each do |home_away, key|
     home_away[:players].each do |players|
       if players[:player_name] = player_name
-      each_player = players.each 
+      each_player = players.each do |stats|
       end
     end
     end
-  return each_player
+  return each_player[stats]
 end
 
 

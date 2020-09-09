@@ -192,9 +192,10 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds 
-  count = 0
+  biggest_shoe_size = 0
   get_players.each do |players|
-    
-    count++
+    if players[:shoe] >= biggest_shoe_size
+      biggest_shoe_size = players[:shoe]
+    return players[:rebounds]
   end
 end

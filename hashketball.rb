@@ -196,4 +196,8 @@ def player_stats(player_name)
   return each_player[stats]
 end
 
-def 
+def big_shoe_rebounds 
+  get_players.each do |players|
+    
+  end
+end

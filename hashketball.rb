@@ -201,5 +201,5 @@ def big_shoe_rebounds
       end
     end
   end
-  players[:rebounds]
+  return players[:rebounds]
 end

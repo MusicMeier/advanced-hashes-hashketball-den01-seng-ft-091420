@@ -189,6 +189,7 @@ def player_stats(player_name)
       end
     end
     end
+    end
   return each_player[stats]
 end
 

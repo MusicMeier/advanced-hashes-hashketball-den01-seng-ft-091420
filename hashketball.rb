@@ -197,6 +197,7 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds 
+  count = 0
   get_players.each do |players|
     
   end

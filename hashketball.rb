@@ -188,6 +188,7 @@ def player_stats(player_name)
       each_player = players.each 
       end
     end
+    end
   return each_player
 end
 

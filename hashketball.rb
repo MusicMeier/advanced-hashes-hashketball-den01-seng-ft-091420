@@ -198,8 +198,9 @@ def big_shoe_rebounds
     keys[:players].map do |players|
       if players[:shoe] > biggest_shoe_size
         biggest_shoe_size = players[:shoe]
-        return players[:rebounds]
+        number_of_rebounds = players[:rebounds]
       end
     end
   end
+  return number_of_rebounds
 end

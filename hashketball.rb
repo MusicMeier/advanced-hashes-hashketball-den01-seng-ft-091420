@@ -182,15 +182,11 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  game_hash.each do |key, home_away|
-    if home_away[:players] == player_name
-      binding.pry
-      key[:players].each do |player|
-        binding.pry
-        return player
+  game_hash.each do |home_away, key|
+    home_away[:players].each do  |player|
+      player
       end
     end
-  end
   
 end
 

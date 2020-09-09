@@ -191,10 +191,10 @@ def player_stats(player_name)
   end
 end
 
-# def big_shoe_rebounds 
-#   count = 0
-#   get_players.each do |players|
+def big_shoe_rebounds 
+  count = 0
+  get_players.each do |players|
     
-#     count++
-#   end
-# end
+    count++
+  end
+end

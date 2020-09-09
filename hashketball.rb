@@ -188,8 +188,7 @@ def player_stats(player_name)
        return players
       end
     end
-    end
-    end
+  end
 end
 
 # def big_shoe_rebounds 
